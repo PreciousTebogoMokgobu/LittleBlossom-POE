@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LittleBlossom Inclusive Daycare. Find our location in Sandton, Johannesburg.">
+    <meta name="keywords" content="contact daycare, Sandton daycare, daycare map">
+    <meta name="author" content="Precious Tebogo Mokgobu">
+    <title>Contact | LittleBlossom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.jpeg" alt="Logo"><div><h1>LittleBlossom</h1><p>Inclusive Daycare</p></div></div>
+        <nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="enquiry.html">Enquiry</a><a href="contact.html" class="active">Contact</a></nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 40vh; background: linear-gradient(135deg, rgba(245,166,35,0.9), rgba(255,107,107,0.9));">
+            <h1>Get in Touch</h1>
+        </section>
+
+        <section class="container grid-2">
+            <div class="reveal">
+                <h2 class="section-title" style="text-align: left;">Contact Info</h2>
+                <div class="card" style="text-align: left; padding: 20px; margin-bottom: 20px;">
+                    <h3> Location</h3>
+                    <p>56 Blossom Street, Sandton, Johannesburg</p>
+                </div>
+                <div class="card" style="text-align: left; padding: 20px; margin-bottom: 20px;">
+                    <h3> Phone & Email</h3>
+                    <p>011 234 5678</p>
+                    <p>info@littleblossom.co.za</p>
+                </div>
+                
+                <!-- GOOGLE MAP EMBED -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.578807058864!2d28.0537279!3d-26.106477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573f7e6a2f8b1%3A0x6d1a5b6c8e7f4a3!2sSandton%2C%20Johannesburg!5e0!3m2!1sen!2sza!4v1700000000000" width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="form-box reveal" style="margin: 0; padding: 3rem;">
+                <div id="conSuccess" class="success-msg">Success! Your message has been sent.</div>
+                <h3 style="margin-bottom: 20px;">Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="conName" placeholder="Your Name">
+                        <span class="error">Please enter your name.</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="conEmail" placeholder="Your Email">
+                        <span class="error">Please enter a valid email.</span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="conMessage" rows="4" placeholder="Your Message"></textarea>
+                        <span class="error">Please enter a message.</span>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <footer>
+        <div class="footer-bottom">
+            <p id="liveDateTime" class="live-date-time"></p>
+            <p>&copy; 2026 LittleBlossom Inclusive Daycare.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LittleBlossom Inclusive Daycare - The best nurturing environment for all children in Gauteng.">
+    <meta name="keywords" content="daycare, inclusive daycare, Gauteng, Sandton, special needs, childcare">
+    <meta name="author" content="Precious Tebogo Mokgobu">
+    <title>LittleBlossom | Premium Inclusive Daycare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="LittleBlossom Logo">
+            <div><h1>LittleBlossom</h1><p>Inclusive Daycare</p></div>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="reveal">Where Every Child Shines.</h1>
+            <p class="reveal">A premium, fully inclusive daycare in Gauteng. We provide a safe, nurturing, and stimulating environment for children of all abilities and backgrounds.</p>
+            <a href="enquiry.html" class="btn reveal">Start Your Journey</a>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title reveal">Why LittleBlossom?</h2>
+            <div class="grid-4">
+                <div class="card reveal"><h3> Truly Inclusive</h3><p>We do not just accept differences; we celebrate them. All abilities are welcome.</p></div>
+                <div class="card reveal"><h3> Expert Educators</h3><p>Our staff are highly qualified in Early Childhood Development and Special Needs.</p></div>
+                <div class="card reveal"><h3> Safe & Secure</h3><p>24/7 security, CCTV, and strict drop-off/pick-up protocols for peace of mind.</p></div>
+                <div class="card reveal"><h3> Holistic Growth</h3><p>We focus on cognitive, emotional, social, and physical development.</p></div>
+            </div>
+        </section>
+
+        <section class="container bg-white" style="border-radius: 30px; margin-bottom: 2rem;">
+            <h2 class="section-title reveal">Take a Virtual Tour</h2>
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto; position: relative; cursor: pointer; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);" onclick="window.open('https://youtube.com/shorts/McZ3Z0sSlUI', '_blank')">
+                <img src="https://img.youtube.com/vi/McZ3Z0sSlUI/maxresdefault.jpg" alt="LittleBlossom Daycare Video Tour" style="width: 100%; display: block;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255, 0, 0, 0.9); color: white; padding: 15px 40px; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">▶ Watch Video</div>
+            </div>
+            <p style="text-align: center; color: #666; font-size: 0.9rem; margin-top: 15px;">Click the image to watch our virtual tour on YouTube.</p>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title reveal">What Parents Say</h2>
+            <div class="grid-3">
+                <div class="card reveal">
+                    <img src="images/parent1.jpg" alt="Sarah M." class="team-img" style="border-color: var(--primary);">
+                    <p><em>"LittleBlossom has been a blessing for our family. Our daughter with autism has thrived in their caring, understanding environment. She feels safe and loved."</em></p>
+                    <h3>— Sarah M.</h3><p>Johannesburg</p>
+                </div>
+                <div class="card reveal">
+                    <img src="images/parent2.jpg" alt="Thandi N." class="team-img" style="border-color: var(--primary);">
+                    <p><em>"As a single working mom, finding affordable, inclusive daycare seemed impossible. LittleBlossom made it possible. My daughter loves going there every day."</em></p>
+                    <h3>— Thandi N.</h3><p>Midrand</p>
+                </div>
+                <div class="card reveal">
+                    <img src="images/parent3.webp" alt="David K." class="team-img" style="border-color: var(--primary);">
+                    <p><em>"My son is very shy and was scared of other daycares. At LittleBlossom, he came out of his shell. The staff understand his personality and nurture his growth."</em></p>
+                    <h3>— David K.</h3><p>Sandton</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-white" style="border-radius: 30px; margin-bottom: 5rem;">
+            <h2 class="section-title reveal">Life at LittleBlossom</h2>
+            <div class="gallery reveal">
+                <div class="gallery-item" onclick="openLightbox('images/classroom.jpg')"><img src="images/R.jpg" alt="Classroom"><div class="gallery-overlay">Our Classrooms</div></div>
+                <div class="gallery-item" onclick="openLightbox('images/baby.jpg')"><img src="images/download.webp" alt="Babies"><div class="gallery-overlay">Joyful Learning</div></div>
+                <div class="gallery-item" onclick="openLightbox('images/group.jpg')"><img src="images/OIP (1).webp" alt="Group"><div class="gallery-overlay">Our Community</div></div>
+                <div class="gallery-item" onclick="openLightbox('images/toddler.jpg')"><img src="images/OIP.jpg" alt="Toddler"><div class="gallery-overlay">Happy Toddlers</div></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded View">
+    </div>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo"><img src="images/logo.jpeg" alt="Logo"><h3>LittleBlossom</h3></div>
+                <p>Setting the standard for inclusive early childhood education in Gauteng.</p>
+            </div>
+            <div class="footer-col"><h4>Explore</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Programs</a></div>
+            <div class="footer-col"><h4>Contact Us</h4><p> 56 Blossom Street, Sandton</p><p> 011 234 5678</p></div>
+        </div>
+        <div class="footer-bottom">
+            <p id="liveDateTime" class="live-date-time"></p>
+            <p>&copy; 2026 LittleBlossom Inclusive Daycare. Designed by Precious Mokgobu.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

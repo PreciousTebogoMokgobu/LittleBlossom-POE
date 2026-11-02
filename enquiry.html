@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about enrollment at LittleBlossom Inclusive Daycare in Gauteng.">
+    <meta name="keywords" content="enroll child, daycare enquiry, schedule visit">
+    <meta name="author" content="Precious Tebogo Mokgobu">
+    <title>Enquiry | LittleBlossom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.jpeg" alt="Logo"><div><h1>LittleBlossom</h1><p>Inclusive Daycare</p></div></div>
+        <nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="enquiry.html" class="active">Enquiry</a><a href="contact.html">Contact</a></nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 40vh; background: linear-gradient(135deg, rgba(248,164,184,0.9), rgba(255,107,107,0.9));">
+            <h1>Join the Family</h1>
+            <p>Fill out the form below to schedule a tour or ask a question.</p>
+        </section>
+
+        <section class="container">
+            <div class="form-box reveal">
+                <div id="enqSuccess" class="success-msg">Success! Your message has been sent.</div>
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label>Parent's Full Name *</label>
+                        <input type="text" id="enqName" placeholder="e.g. Sarah Smith">
+                        <span class="error">Please enter your name.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" id="enqEmail" placeholder="sarah@example.com">
+                        <span class="error">Please enter a valid email.</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Requirements *</label>
+                        <textarea id="enqMessage" rows="4" placeholder="Tell us about your child..."></textarea>
+                        <span class="error">Please enter a message.</span>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Enquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <footer>
+        <div class="footer-bottom">
+            <p id="liveDateTime" class="live-date-time"></p>
+            <p>&copy; 2026 LittleBlossom Inclusive Daycare.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

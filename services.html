@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <meta name="description" content="Explore premium inclusive daycare services at LittleBlossom. Infant care, preschool, and special needs support in Gauteng.">
+    <meta name="keywords" content="daycare services, infant care, preschool, special needs support, Gauteng daycare">
+    <meta name="author" content="Precious Tebogo Mokgobu">
+    
+    <title>Services & Gallery | LittleBlossom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.jpeg" alt="Logo"><div><h1>LittleBlossom</h1><p>Inclusive Daycare</p></div></div>
+        <nav><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html" class="active">Services</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" style="min-height: 40vh; background: linear-gradient(135deg, rgba(126,211,33,0.9), rgba(74,144,217,0.9));">
+            <h1>Our Programs & Services</h1>
+            <p>Discover the inclusive care and developmental programs we offer.</p>
+        </section>
+
+        <!-- SERVICES & SEARCH -->
+        <section class="container">
+            <h2 class="section-title reveal">What We Offer</h2>
+            
+            <div class="reveal" style="text-align: center; margin-bottom: 3rem;">
+                <input type="text" id="searchInput" onkeyup="filterServices()" placeholder="Search our programs (e.g., Toddler, Nutrition)..." style="padding: 15px; width: 100%; max-width: 600px; border-radius: 50px; border: 2px solid var(--secondary); font-size: 1rem; box-shadow: var(--shadow);">
+            </div>
+
+            <div class="grid-3">
+                <div class="card service-card reveal">
+                    <h3>Infant Care (0-18m)</h3>
+                    <p>Nurturing, sensory-focused care for our youngest learners. High staff-to-child ratio.</p>
+                </div>
+                <div class="card service-card reveal">
+                    <h3>Toddler Program (18m-3y)</h3>
+                    <p>Focus on language, motor skills, and social play in a safe environment.</p>
+                </div>
+                <div class="card service-card reveal">
+                    <h3>Preschool (3-5y)</h3>
+                    <p>School readiness, early literacy, numeracy, and creative expression.</p>
+                </div>
+                <div class="card service-card reveal">
+                    <h3>Inclusive Support</h3>
+                    <p>On-site therapists, sensory rooms, and individualized education plans for special needs.</p>
+                </div>
+                <div class="card service-card reveal">
+                    <h3>Nutrition Program</h3>
+                    <p>Chef-prepared, balanced meals catering to all dietary restrictions and allergies.</p>
+                </div>
+                <div class="card service-card reveal">
+                    <h3>Aftercare & Holiday Club</h3>
+                    <p>Safe transport and supervised homework assistance for school-going siblings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MASSIVE 17-IMAGE GALLERY SECTION -->
+        <section class="container bg-white" style="border-radius: 30px; margin-bottom: 5rem;">
+            <h2 class="section-title reveal">Life at LittleBlossom</h2>
+            <p style="text-align: center; margin-bottom: 3rem;" class="reveal">Click any image to view it in full size.</p>
+            
+            <div class="gallery reveal">
+                <!-- 1 -->
+                <div class="gallery-item" onclick="openLightbox('images/classroom.jpg')">
+                    <img src="images/classroon.webp" alt="Bright Classroom">
+                    <div class="gallery-overlay">Our Classrooms</div>
+                </div>
+                <!-- 2 -->
+                <div class="gallery-item" onclick="openLightbox('images/baby.jpg')">
+                    <img src="images/OIP.jpg" alt="Happy Baby">
+                    <div class="gallery-overlay">Joyful Learning</div>
+                </div>
+                <!-- 3 -->
+                <div class="gallery-item" onclick="openLightbox('images/teacher.jpg')">
+                    <img src="images/teacher.webp" alt="Smiling Teacher">
+                    <div class="gallery-overlay">Expert Staff</div>
+                </div>
+                <!-- 4 -->
+                <div class="gallery-item" onclick="openLightbox('images/group.jpg')">
+                    <img src="images/kids.webp" alt="Group of Children">
+                    <div class="gallery-overlay">Our Community</div>
+                </div>
+                <!-- 5 -->
+                <div class="gallery-item" onclick="openLightbox('images/creative.jpg')">
+                    <img src="images/R.jpg" alt="Creative Play">
+                    <div class="gallery-overlay">Arts & Crafts</div>
+                </div>
+                <!-- 6 -->
+                <div class="gallery-item" onclick="openLightbox('images/circle-time.jpg')">
+                    <img src="images/OIP (1).webp" alt="Circle Time">
+                    <div class="gallery-overlay">Circle Time</div>
+                </div>
+                <!-- 7 -->
+                <div class="gallery-item" onclick="openLightbox('images/teacher-boy.jpg')">
+                    <img src="images/south-africa-cape-town-teachers-and-children-in-day-care-facility-DJ79HJ.jpg" alt="Teacher and Boy">
+                    <div class="gallery-overlay">Individual Attention</div>
+                </div>
+                <!-- 8 -->
+                <div class="gallery-item" onclick="openLightbox('images/smiling-teacher.jpg')">
+                    <img src="images/img_2aafad266a72b15a70d7cd9e03cff62d834681d8.jpg" alt="Smiling Teacher">
+                    <div class="gallery-overlay">Caring Educators</div>
+                </div>
+                <!-- 9 -->
+                <div class="gallery-item" onclick="openLightbox('images/teacher-girl.jpg')">
+                    <img src="images/OIP (2).webp" alt="Teacher and Girl">
+                    <div class="gallery-overlay">Guided Play</div>
+                </div>
+                <!-- 10 -->
+                <div class="gallery-item" onclick="openLightbox('images/blocks.jpg')">
+                    <img src="images/OIP.webp" alt="Playing with Blocks">
+                    <div class="gallery-overlay">Building Skills</div>
+                </div>
+                <!-- 11 -->
+                <div class="gallery-item" onclick="openLightbox('images/family-1.jpg')">
+                    <img src="images/download.webp" alt="Happy Family 1">
+                    <div class="gallery-overlay">Happy Families</div>
+                </div>
+                <!-- 12 -->
+                <div class="gallery-item" onclick="openLightbox('images/toddler-2.jpg')">
+                    <img src="images/toddler.avif" alt="Smiling Child">
+                    <div class="gallery-overlay">Pure Joy</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded View">
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-bottom">
+            <p id="liveDateTime" class="live-date-time"></p>
+            <p>&copy; 2026 LittleBlossom Inclusive Daycare. Designed by Precious Mokgobu.</p>
+        </div>
+    </footer>
+    
+    <!-- JAVASCRIPT LINK -->
+    <script src="js/script.js"></script>
+</body>
+</html>
